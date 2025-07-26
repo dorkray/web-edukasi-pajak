@@ -1,0 +1,177 @@
+/* Basic Reset & Body Style */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 5px solid #003d82;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav a.active {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+    max-width: 900px;
+    margin: 20px auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #f4f4f9;
+    padding-bottom: 10px;
+}
+
+/* Images and Video */
+.page-image {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+    border-radius: 8px;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Table Style */
+.pajak-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.pajak-table th, .pajak-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.pajak-table th {
+    background-color: #0056b3;
+    color: white;
+    text-align: center;
+}
+
+.pajak-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Quiz Form */
+.question {
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.question p {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#quiz-form label {
+    display: block;
+    margin: 5px 0 5px 20px;
+    cursor: pointer;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#hasil-kuis {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 30px;
+}

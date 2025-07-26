@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Interaktif Pajak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Edukasi Perpajakan Indonesia</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="pajak-pusat.html">Pajak Pusat</a>
+        <a href="pajak-daerah.html">Pajak Daerah</a>
+        <a href="kuis.html" class="active">Kuis Interaktif</a>
+    </nav>
+
+    <main>
+        <section class="card">
+            <h2>Uji Pemahaman Pajak Anda!</h2>
+            <p>Jawablah pertanyaan-pertanyaan berikut untuk mengukur seberapa jauh Anda memahami perpajakan di Indonesia.</p>
+            
+            <form id="quiz-form" onsubmit="return false;">
+                <div class="question">
+                    <p>1. Pajak Pertambahan Nilai (PPN) termasuk jenis pajak...</p>
+                    <label><input type="radio" name="q1" value="pusat"> Pusat</label>
+                    <label><input type="radio" name="q1" value="daerah"> Daerah</label>
+                </div>
+
+                <div class="question">
+                    <p>2. Mana di antara berikut ini yang merupakan Pajak Daerah tingkat Provinsi?</p>
+                    <label><input type="radio" name="q2" value="hotel"> Pajak Hotel</label>
+                    <label><input type="radio" name="q2" value="rokok"> Pajak Rokok</label>
+                </div>
+
+                <div class="question">
+                    <p>3. Lembaga yang bertanggung jawab memungut Pajak Pusat adalah...</p>
+                    <label><input type="radio" name="q3" value="pemda"> Pemerintah Daerah</label>
+                    <label><input type="radio" name="q3" value="djp"> Direktorat Jenderal Pajak (DJP)</label>
+                </div>
+
+                <div class="question">
+                    <p>4. Pajak Restoran dan Pajak Hiburan dipungut oleh pemerintah tingkat...</p>
+                    <label><input type="radio" name="q4" value="provinsi"> Provinsi</label>
+                    <label><input type="radio" name="q4" value="kabupaten_kota"> Kabupaten/Kota</label>
+                </div>
+
+                <div class="question">
+                    <p>5. Pajak Penghasilan (PPh) digunakan untuk membiayai...</p>
+                    <label><input type="radio" name="q5" value="apbn"> Anggaran Pendapatan dan Belanja Negara (APBN)</label>
+                    <label><input type="radio" name="q5" value="apbd"> Anggaran Pendapatan dan Belanja Daerah (APBD)</label>
+                </div>
+
+                <div class="question">
+                    <p>6. Pajak yang dikenakan atas kepemilikan atau pemanfaatan kendaraan bermotor adalah...</p>
+                    <label><input type="radio" name="q6" value="pkb"> Pajak Kendaraan Bermotor (PKB)</label>
+                    <label><input type="radio" name="q6" value="pph"> Pajak Penghasilan (PPh)</label>
+                </div>
+
+                <div class="question">
+                    <p>7. Bea Meterai termasuk dalam kategori pajak...</p>
+                    <label><input type="radio" name="q7" value="pusat"> Pusat</label>
+                    <label><input type="radio" name="q7" value="daerah"> Daerah</label>
+                </div>
+                
+                <div class="question">
+                    <p>8. PBB sektor Perkebunan, Perhutanan, dan Pertambangan (PBB-P3) dikelola oleh...</p>
+                    <label><input type="radio" name="q8" value="pusat"> Pemerintah Pusat</label>
+                    <label><input type="radio" name="q8" value="daerah"> Pemerintah Daerah</label>
+                </div>
+
+                <div class="question">
+                    <p>9. Berikut ini yang BUKAN merupakan Pajak Pusat adalah...</p>
+                    <label><input type="radio" name="q9" value="ppn"> PPN</label>
+                    <label><input type="radio" name="q9" value="reklame"> Pajak Reklame</label>
+                </div>
+
+                <div class="question">
+                    <p>10. Hasil pemungutan Pajak Hotel digunakan untuk membiayai...</p>
+                    <label><input type="radio" name="q10" value="apbn"> Keperluan Negara (APBN)</label>
+                    <label><input type="radio" name="q10" value="apbd"> Keperluan Daerah (APBD)</label>
+                </div>
+
+                <button type="button" onclick="cekJawaban()">Kirim Jawaban</button>
+            </form>
+            
+            <div id="hasil-kuis"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rajasa Narottama - NIM 240401020162 - PJJ S1 Informatika - Universitas Siber Asia</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
